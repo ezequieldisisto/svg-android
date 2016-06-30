@@ -35,7 +35,8 @@ public class ParserHelper {
 
 	public ParserHelper(String str, int pos) {
 		try {
-			this.s = (char[]) STRING_CHARS.get(str);
+			//this.s = (char[]) STRING_CHARS.get(str);
+			this.s = str.toCharArray();
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
